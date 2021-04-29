@@ -15,7 +15,7 @@
   --indigo: #6610f2;
   --purple: #6f42c1;
   --dark-violet: #2b044d;
-  --pink: #e83e8c;
+  --pink: #f9218d;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -34,7 +34,7 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --header-background: #f4feff;
-
+  --play-color: #d852e8;
   /* font and typography */
   --body-font: "Poppins", sans-serif;
   --content-font: "Nunito", sans-serif;
@@ -114,7 +114,7 @@ img {
   height: auto;
 }
 
-button {
+.button {
   cursor: pointer;
 }
 
@@ -181,8 +181,57 @@ button {
   .nav__link:hover {
     color: var(--indigo);
   }
+  .bd-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .home__img {
+    display: none;
+  }
+  .text--title {
+    font-size: 3.2rem;
+    font-weight: var(--font-semi-bold);
+  }
 }
 
 .show-menu {
   top: calc(var(--header-height));
+}
+
+.home {
+  background: var(--header-background);
+}
+.text--top {
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  color: var(--dark-violet);
+  margin-bottom: var(--mb-3);
+}
+.text--title {
+  margin-bottom: var(--mb-3);
+}
+.text--sub {
+  width: 70%;
+  color: var(--gray);
+  line-height: 1.9rem;
+  font-weight: var(--font--text);
+  margin-bottom: var(--mb-6);
+}
+
+.button__download {
+  background: var(--pink);
+  color: var(--white);
+  padding: var(--mb-1) var(--mb-5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.button__play {
+  width: 3.7rem;
+  height: 3.7rem;
+  background: var(--play-color);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: var(--mb-3);
 }
