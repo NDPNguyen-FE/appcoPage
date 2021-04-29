@@ -1,0 +1,188 @@
+/* ===================== FONT GOOGLE ======================== */
+/* font Nunito Light 300 Regular 400 Semi-bold 600 Extra-bold 800*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap");
+
+/* font Poppin  Thin 100 Extra-light 200 Light 300
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&family=Poppins:wght@100;200;300&display=swap");
+/* ===================== VARIABLE CSS====================================== */
+:root {
+  /* header-height */
+  --header-height: 5rem;
+
+  /* color variables */
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --dark-violet: #2b044d;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --header-background: #f4feff;
+
+  /* font and typography */
+  --body-font: "Poppins", sans-serif;
+  --content-font: "Nunito", sans-serif;
+  --body-font-size: 1rem;
+  --h1-font-size: 4rem;
+  --h2-font-size: 3rem;
+  --sub-font-size: 0.7rem;
+
+  /* font-weight */
+  --font-semi-bold: 700;
+  --font--bold: 600;
+  --font-text: 400;
+  --font-sub: 300;
+
+  /*========== Margenes ==========*/
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /* z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --h1-font-size: 1.8rem;
+    --h2-font-size: 1.8rem;
+  }
+}
+
+/* ========================== BASE =========================== */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  color: var(--dark);
+  line-height: 1.5;
+}
+h1 {
+  font-size: var(--h1-font-size);
+}
+h2,
+h3 {
+  font-size: var(--h2-font-size);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--content-font);
+  color: var(--dark-violet);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*========== CLASS CSS ==========*/
+.section {
+  padding: 4rem 0 2rem;
+}
+.bd-flex {
+  display: flex;
+}
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.bd-container {
+  max-width: 1200px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--header-background);
+}
+.l-main {
+  overflow: hidden;
+}
+/*========== NAV ==========*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 991px) {
+  .nav {
+    position: relative;
+  }
+  .nav__menu {
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    top: -320px;
+    z-index: var(--z-tooltip);
+    transition: 0.5s;
+  }
+  .nav__list {
+    width: 100%;
+    text-align: center;
+  }
+  .nav__item {
+    margin: var(--mb-2) 0;
+  }
+  .nav__link {
+    color: var(--dark);
+    font-weight: var(--font--bold);
+    line-height: 1.3rem;
+  }
+  .nav__link:hover {
+    color: var(--indigo);
+  }
+}
+
+.show-menu {
+  top: calc(var(--header-height));
+}
