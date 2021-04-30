@@ -154,6 +154,8 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+/*====================== Screen max-width:991px ======================*/
 @media screen and (max-width: 991px) {
   .nav {
     position: relative;
@@ -171,7 +173,7 @@ img {
     text-align: center;
   }
   .nav__item {
-    margin: var(--mb-2) 0;
+    margin: var(--mb-3) 0;
   }
   .nav__link {
     color: var(--dark);
@@ -197,9 +199,10 @@ img {
 .show-menu {
   top: calc(var(--header-height));
 }
+/* ================= HOME ====================== */
 
 .home {
-  background: var(--header-background);
+  background: red;
 }
 .text--top {
   text-transform: uppercase;
@@ -216,6 +219,9 @@ img {
   line-height: 1.9rem;
   font-weight: var(--font--text);
   margin-bottom: var(--mb-6);
+}
+.button__group {
+  margin-bottom: var(--mb-5);
 }
 
 .button__download {

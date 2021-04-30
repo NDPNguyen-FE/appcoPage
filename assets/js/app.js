@@ -10,3 +10,4 @@ const showMenu = (toggleId, navId) => {
 };
 
 showMenu("nav__toggle", "nav__menu");
+/**==================================== REMOVE MENU ============================================= */
