@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ====================== BOXICONS CSS======================================= -->
+    <!-- ================== BOXICONS CSS =========================== -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!-- =========================== MAIN CSS========================================== -->
+    <!-- ====================== MAIN CSS=========================== -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- ===================== HEADER ======================================== -->
+    <!-- ===================== HEADER ============================== -->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
         <div class="nav__logo">
@@ -23,9 +23,15 @@
 
         <div class="nav__menu bd-flex" id="nav__menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Feature</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Services</a></li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#feature" class="nav__link">Feature</a>
+            </li>
+            <li class="nav__item">
+              <a href="#service" class="nav__link">Services</a>
+            </li>
             <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
             <li class="nav__item"><a href="" class="nav__link">Pages</a></li>
             <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
@@ -37,7 +43,7 @@
         </div>
       </nav>
     </header>
-
+    <!-- ===================== MAIN ================================ -->
     <main class="l-main">
       <!-- ===================== HOME ============================== -->
       <section class="home section" id="home">
@@ -65,33 +71,124 @@
           </div>
         </div>
       </section>
-      <!-- ===================== FEATURES ============================== -->
-      <section class="feature bd-flex" id="feature">
+      <!-- ==================== FEATURES =========================== -->
+      <section class="feature bd-flex section" id="feature">
         <div class="feature__img">
           <img src="assets/img/best-features.png" alt="" />
         </div>
-        <div class="feature__content">
+
+        <div class="feature__content bd-container">
           <div class="feature__text">
             <h2>Some of the best features Of Our App!</h2>
           </div>
-          <div class="feature__grid">
-            <div class="feature__grid--item">
-              <div class="feature__item--head"></div>
-              <div class="feature__item--text"></div>
+
+          <div class="feature__grid bd-grid">
+            <div class="feature__grid--item bd-flex">
+              <div class="feature__item--icon">
+                <span><i class="bx bx-chip" style="color: #ffffff"></i></span>
+              </div>
+              <div class="feature__item--text">
+                <h3>Easy to Costomize</h3>
+                <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+              </div>
             </div>
-            <div class="feature__grid--item"></div>
-            <div class="feature__grid--item"></div>
-            <div class="feature__grid--item"></div>
+
+            <div class="feature__grid--item bd-flex">
+              <div class="feature__item--icon">
+                <span><i class="bx bx-chip" style="color: #ffffff"></i></span>
+              </div>
+              <div class="feature__item--text">
+                <h3>Extreme Security</h3>
+                <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+              </div>
+            </div>
+
+            <div class="feature__grid--item bd-flex">
+              <div class="feature__item--icon">
+                <span><i class="bx bx-chip" style="color: #ffffff"></i></span>
+              </div>
+              <div class="feature__item--text">
+                <h3>Customer Support</h3>
+                <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+              </div>
+            </div>
+
+            <div class="feature__grid--item bd-flex">
+              <div class="feature__item--icon">
+                <span><i class="bx bx-chip" style="color: #ffffff"></i></span>
+              </div>
+              <div class="feature__item--text">
+                <h3>Creative Design</h3>
+                <p>Aorem psum olorsit amet ectetur adipiscing elit, sed dov.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- ===================== SERVICES ============================== -->
-      <!-- ===================== PRICING ============================== -->
-      <!-- ===================== PAGES ============================== -->
-      <!-- ===================== CONTACT ============================== -->
+      <!-- ===================== SERVICES ========================== -->
+      <section class="section service" id="service">
+        <div class="service__main bd-container">
+          <div class="service__head">
+            <h2>How Can We HelpYour <br />with Appco!</h2>
+          </div>
+
+          <div class="secvice__content bd-grid">
+            <div class="secvice__content--card bd-flex">
+              <div class="card__img bd-flex">
+                <i class="bx bx-user bx-md" style="color: #ffffff"></i>
+              </div>
+              <div class="card__caption">
+                <h4><a href="">Easily Manage</a></h4>
+              </div>
+              <div class="card__sub">
+                <p>
+                  Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
+                  tempor incididunt ut laborea.
+                </p>
+              </div>
+            </div>
+
+            <div class="secvice__content--card bd-flex card--active">
+              <div class="card__img bd-flex">
+                <i
+                  class="bx bx-credit-card-alt bx-md"
+                  style="color: #ffffff"
+                ></i>
+              </div>
+              <div class="card__caption">
+                <h4><a href="#">Get Payments Easily</a></h4>
+              </div>
+              <div class="card__sub">
+                <p>
+                  Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
+                  tempor incididunt ut laborea.
+                </p>
+              </div>
+            </div>
+
+            <div class="secvice__content--card bd-flex">
+              <div class="card__img bd-flex">
+                <i class="bx bx-paper-plane bx-md" style="color: #ffffff"></i>
+              </div>
+              <div class="card__caption">
+                <h4><a href="">Quick Messaging</a></h4>
+              </div>
+              <div class="card__sub">
+                <p>
+                  Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
+                  tempor incididunt ut laborea.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================== PRICING =========================== -->
+      <!-- ===================== PAGES ============================= -->
+      <!-- ===================== CONTACT =========================== -->
     </main>
 
-    <!-- ================================JAVASCRIPT======================================== -->
+    <!-- ===================JAVASCRIPT============================== -->
     <script src="assets/js/app.js"></script>
   </body>
 </html>
