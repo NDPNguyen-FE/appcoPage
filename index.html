@@ -9,6 +9,20 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- ================== OWL CAROUSEL CSS =========================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+
     <!-- ====================== MAIN CSS=========================== -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Document</title>
@@ -32,8 +46,13 @@
             <li class="nav__item">
               <a href="#service" class="nav__link">Services</a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Pages</a></li>
+            <li class="nav__item">
+              <a href="#page" class="nav__link">Pages</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+
             <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
           </ul>
         </div>
@@ -183,11 +202,110 @@
           </div>
         </div>
       </section>
-      <!-- ===================== PRICING =========================== -->
-      <!-- ===================== PAGES ============================= -->
+      <!-- ===================== PAGES =========================== -->
+      <section class="section page bd-flex" id="page">
+        <div class="page__content bd-container">
+          <h2 class="page__content--text">
+            Applic Apps <br />
+            Screenshot
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecadipiscing elit, sed do eiusmod
+            tempor incididunt ut ore et dolore magna aliqua. Quis ipsum
+            suspendisse gravida. Risus commodo viverra maecenasan lacus vel
+            facilisis.
+          </p>
+        </div>
+        <div class="page__carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="assets/img/App1.png" alt="" /></div>
+            <div class="item"><img src="assets/img/App2.png" alt="" /></div>
+            <div class="item"><img src="assets/img/App3.png" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================== PRICING  ============================= -->
+      <section class="pricing section bd-flex" id="pricing">
+        <div class="bd-container">
+          <h2>Choose Your Very Best Pricing Plan.</h2>
+        </div>
+      </section>
+
+      <div class="pricing__card bd-grid bd-container">
+        <div class="pricing__item">
+          <div class="pricing__item--main">
+            <div class="pricing__item--top">
+              <span class="pricing__year">2 Years</span>
+              <h4><span class="pricing__span">$05 </span> / month</h4>
+            </div>
+            <div class="pricing__item__menu">
+              <ul class="pricing__item__menu--list">
+                <li>Increase traffic 50%</li>
+                <li>E-mail support</li>
+                <li>10 Free Optimization</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+            <div class="pring__item--button button">
+              <a href="#">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing__item">
+          <div class="pricing__item--main">
+            <div class="pricing__item--top">
+              <span class="pricing__year">2 Years</span>
+              <h4><span class="pricing__span">$05 </span> / month</h4>
+            </div>
+            <div class="pricing__item__menu">
+              <ul class="pricing__item__menu--list">
+                <li>Increase traffic 50%</li>
+                <li>E-mail support</li>
+                <li>10 Free Optimization</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+            <div class="pring__item--button button">
+              <a href="#">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing__item">
+          <div class="pricing__item--main">
+            <div class="pricing__item--top">
+              <span class="pricing__year">2 Years</span>
+              <h4><span class="pricing__span">$05 </span> / month</h4>
+            </div>
+            <div class="pricing__item__menu">
+              <ul class="pricing__item__menu--list">
+                <li>Increase traffic 50%</li>
+                <li>E-mail support</li>
+                <li>10 Free Optimization</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+            <div class="pring__item--button button">
+              <a href="#">GET STARTED</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ===================== CONTACT =========================== -->
     </main>
 
+    <!-- =================== OWL CAROUSEL JS ============================== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
     <!-- ===================JAVASCRIPT============================== -->
     <script src="assets/js/app.js"></script>
   </body>

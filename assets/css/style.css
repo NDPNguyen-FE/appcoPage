@@ -36,6 +36,7 @@
   --header-background: #f4feff;
   --play-color: #d852e8;
   --light-pink: #e88cea;
+  --purple-btn: #712fda;
   /* font and typography */
   --body-font: "Poppins", sans-serif;
   --content-font: "Nunito", sans-serif;
@@ -168,7 +169,7 @@ img {
     position: absolute;
     background-color: var(--white);
     width: 100%;
-    top: -320px;
+    top: -360px;
     z-index: var(--z-tooltip);
     transition: 0.5s;
   }
@@ -189,7 +190,7 @@ img {
   }
   .bd-container {
     max-width: 720px;
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
   /* ===========image section ========== */
   .home__img,
@@ -208,7 +209,8 @@ img {
     margin-bottom: var(--mb-6);
   }
   .feature__grid,
-  .secvice__content {
+  .secvice__content,
+  .pricing__card {
     grid-template-columns: repeat(2, 1fr);
   }
   .feature__grid--item {
@@ -218,6 +220,17 @@ img {
     line-height: 1.8rem;
     font-size: 0.9rem;
   }
+  /* ==================PAGE ====================== */
+  .page {
+    flex-direction: column;
+  }
+  .page__content p {
+    max-width: 630px;
+  }
+  /* =================PRICING======================= */
+  .pricing .bd-container {
+    max-width: 480px;
+  }
 }
 
 /* ====================================SHOW MENU======================================== */
@@ -226,9 +239,9 @@ img {
 }
 /* ==================================== HOME =========================================== */
 
-/* .home {
-  background: red;
-} */
+.home {
+  background: var(--header-background);
+}
 .text--top {
   text-transform: uppercase;
   font-weight: var(--font-semi-bold);
@@ -339,4 +352,91 @@ img {
 .secvice__content--card:hover .card__img {
   background: var(--purple);
   transition: 0.5s;
+}
+/* ============================== PAGE ================================== */
+/* ======dots carousel custom====== */
+.owl-dots {
+  display: none;
+}
+.page {
+  margin-bottom: var(--mb-6);
+}
+.page__content p {
+  margin: var(--mb-3) 0;
+  line-height: 2rem;
+  color: var(--gray);
+}
+/* ============================== PRICING ================================== */
+.pricing {
+  background: url(../img/best_pricingbg.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  z-index: -10;
+}
+.pricing .bd-container {
+  margin-top: var(--mb-5);
+}
+.pricing .bd-container h2 {
+  z-index: var(--z-tooltip);
+  color: var(--white);
+}
+.pricing::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #f9218d 0%, #6c19f6 100%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.95;
+  z-index: -2;
+}
+/* ===========Pricing card=============== */
+.pricing__card {
+  margin-top: -295px !important;
+}
+.pricing__item {
+  text-align: center;
+  background: var(--white);
+  border-radius: 7px;
+  box-shadow: 0px 0px 11px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 11px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 11px -4px rgba(0, 0, 0, 0.75);
+}
+.pricing__item--top {
+  border-bottom: 1px solid var(--secondary);
+  margin: 0 var(--mb-6);
+}
+.pricing__item--top .pricing__year {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font--bold);
+  color: var(--gray);
+  display: inline-block;
+  margin-bottom: var(--mb-2);
+}
+.pricing__item--top h4 {
+  color: #6a56a6;
+}
+.pricing__item--top .pricing__span {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  display: inline-block;
+  padding-bottom: var(--mb-3);
+}
+.pricing__item__menu {
+  margin: var(--mb-4) 0;
+}
+.pricing__item__menu--list li {
+  line-height: 2rem;
+  margin-bottom: var(--mb-2);
+  color: var(--gray);
+  font-weight: var(--font-text);
+}
+.pring__item--button {
+  margin-bottom: var(--mb-6);
+}
+.pring__item--button a {
+  background: var(--purple-btn);
+  padding: var(--mb-2) var(--mb-4);
 }
