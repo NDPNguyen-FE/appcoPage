@@ -228,8 +228,13 @@ img {
     max-width: 630px;
   }
   /* =================PRICING======================= */
-  .pricing .bd-container {
+  .pricing .bd-container,
+  .customer__content .bd-container {
     max-width: 480px;
+  }
+  /* =================CUSTOMER======================= */
+  .customer__slide .owl-dots {
+    display: none;
   }
 }
 
@@ -355,7 +360,7 @@ img {
 }
 /* ============================== PAGE ================================== */
 /* ======dots carousel custom====== */
-.owl-dots {
+.page__carousel .owl-dots {
   display: none;
 }
 .page {
@@ -439,4 +444,32 @@ img {
 .pring__item--button a {
   background: var(--purple-btn);
   padding: var(--mb-2) var(--mb-4);
+}
+/* ============================== CUSTOMER ================================== */
+.customer {
+  text-align: center;
+}
+.customer__item--img {
+  width: 60px;
+  height: 60px;
+}
+.customer__item--text {
+  text-align: left;
+}
+.customer__item--text h4 {
+  margin: var(--mb-2) 0;
+}
+.customer__item--text h4 a {
+  color: var(--purple);
+}
+.customer__item--text p {
+  line-height: 1.7rem;
+  color: var(--gray);
+}
+
+.customer__content h2 {
+  margin-bottom: var(--mb-6);
+}
+.customer__item {
+  margin-bottom: var(--mb-6);
 }

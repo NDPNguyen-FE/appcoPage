@@ -20,10 +20,12 @@ function linkAction() {
 
 navLink.forEach((item) => item.addEventListener("click", linkAction));
 
-/**===========================CAROUSEL JS===================== */
-$(".owl-carousel").owlCarousel({
+/**=========================== PAGE CAROUSEL JS===================== */
+$(".owl-one").owlCarousel({
   loop: true,
   margin: 10,
+  autoplay: false,
+  autoplayTimeout: 3000,
   responsiveClass: true,
   responsive: {
     0: {
@@ -34,6 +36,25 @@ $(".owl-carousel").owlCarousel({
     },
     1000: {
       items: 3,
+      nav: false,
+    },
+  },
+});
+$(".owl-two").owlCarousel({
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
       nav: false,
     },
   },
