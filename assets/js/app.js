@@ -24,8 +24,9 @@ navLink.forEach((item) => item.addEventListener("click", linkAction));
 $(".owl-one").owlCarousel({
   loop: true,
   margin: 10,
-  autoplay: false,
-  autoplayTimeout: 3000,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slideTransition: "linear",
   responsiveClass: true,
   responsive: {
     0: {
@@ -44,7 +45,7 @@ $(".owl-two").owlCarousel({
   loop: true,
   margin: 10,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplaySpeed: 5000,
   responsiveClass: true,
   responsive: {
     0: {
