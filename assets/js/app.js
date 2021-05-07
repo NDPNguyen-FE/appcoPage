@@ -1,4 +1,4 @@
-/*================================ Nav__Toggle ========================================= */
+/*================================ Nav__Toggle ================================== */
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);
   const nav = document.getElementById(navId);
@@ -10,7 +10,7 @@ const showMenu = (toggleId, navId) => {
 };
 
 showMenu("nav__toggle", "nav__menu");
-/**==================================== REMOVE MENU ================================= */
+/**=================================== REMOVE MENU ============================ */
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -19,7 +19,29 @@ function linkAction() {
 }
 
 navLink.forEach((item) => item.addEventListener("click", linkAction));
+/**=================================== SCROLL NAV ============================ */
+function scrollHeader() {
+  const nav = document.getElementById("header");
 
+  if (this.scrollY >= 300) {
+    nav.classList.add("scroll-header");
+  } else {
+    nav.classList.remove("scroll-header");
+  }
+}
+
+window.addEventListener("scroll", scrollHeader);
+/**=================================== SCROLL TOP ============================ */
+// function scrollTop() {
+//   const scrollTop = document.getElementById("scroll-top");
+
+//   if (this.scrollY >= 300) {
+//     scrollTop.classList.add("show-scroll");
+//   } else {
+//     scrollTop.classList.remove("show-scroll");
+//   }
+// }
+// window.addEventListener("scroll", scrollTop);
 /**=========================== PAGE CAROUSEL JS===================== */
 $(".owl-one").owlCarousel({
   loop: true,

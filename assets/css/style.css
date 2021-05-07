@@ -246,6 +246,7 @@ img {
   .contact__img {
     display: none;
   }
+  /* ================= FOOTER ======================= */
 }
 
 /* ====================================SHOW MENU======================================== */
@@ -545,4 +546,48 @@ img {
 .contact__img .img2 {
   right: 0;
   bottom: 0;
+}
+/* ============================== scroll nav ============================== */
+.scroll-header {
+  background: var(--white);
+}
+/* ============================== scroll top ============================== */
+.scrolltop {
+  position: fixed;
+  bottom: 2%;
+  right: 1rem;
+  background: var(--dark-violet);
+  color: var(--white);
+  padding: var(--mb-2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.show-scroll {
+  visibility: visible;
+}
+/* ============================== FOOTER  ============================== */
+.footer__container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer__app {
+  flex: 1;
+  margin-right: var(--mb-4);
+}
+.footer__link {
+  justify-content: space-around;
+}
+
+.footer__link--quick {
+  margin-right: var(--mb-3);
+  padding-left: var(--mb-2);
+}
+.footer__link--sup {
+  padding-left: var(--mb-4);
 }
