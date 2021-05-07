@@ -32,16 +32,16 @@ function scrollHeader() {
 
 window.addEventListener("scroll", scrollHeader);
 /**=================================== SCROLL TOP ============================ */
-// function scrollTop() {
-//   const scrollTop = document.getElementById("scroll-top");
+function scrollTop() {
+  const scrollTop = document.getElementById("scroll-top");
 
-//   if (this.scrollY >= 300) {
-//     scrollTop.classList.add("show-scroll");
-//   } else {
-//     scrollTop.classList.remove("show-scroll");
-//   }
-// }
-// window.addEventListener("scroll", scrollTop);
+  if (this.scrollY >= 300) {
+    scrollTop.classList.add("show-scroll");
+  } else {
+    scrollTop.classList.remove("show-scroll");
+  }
+}
+window.addEventListener("scroll", scrollTop);
 /**=========================== PAGE CAROUSEL JS===================== */
 $(".owl-one").owlCarousel({
   loop: true,
