@@ -42,6 +42,7 @@ function scrollTop() {
   }
 }
 window.addEventListener("scroll", scrollTop);
+
 /**=========================== PAGE CAROUSEL JS===================== */
 $(".owl-one").owlCarousel({
   loop: true,
@@ -54,7 +55,7 @@ $(".owl-one").owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    768: {
       items: 2,
     },
     1000: {
@@ -81,4 +82,23 @@ $(".owl-two").owlCarousel({
       nav: false,
     },
   },
+});
+/**=========================== SCROLLREVEAL JS===================== */
+const sr = ScrollReveal({
+  distance: "30px",
+  duration: 1800,
+  reset: true,
+});
+
+sr.reveal(".home__content,.page__content, .device__download", {
+  origin: "left",
+  interval: 200,
+});
+sr.reveal(".home__img,.device__img", {
+  origin: "right",
+  interval: 200,
+});
+sr.reveal(".service__head", {
+  origin: "top",
+  s,
 });
