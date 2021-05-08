@@ -469,7 +469,6 @@ img {
 /* ============================== CUSTOMER ================================== */
 .customer {
   text-align: center;
-  height: 90vh;
 }
 .customer__item {
 }
@@ -636,6 +635,7 @@ input::placeholder {
   padding: var(--mb-1) var(--mb-3);
 }
 /* ============================== media query  ============================== */
+
 @media screen and (max-width: 767px) {
   .bd-container {
     max-width: 540px;
@@ -674,7 +674,7 @@ input::placeholder {
     margin-top: var(--mb-3);
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   :root {
     --h1-font-size: 3.3rem;
     --h2-font-size: 2.5rem;
